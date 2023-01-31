@@ -13,7 +13,47 @@
 		87AE2BF72988AC9600B6B3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AE2BF52988AC9600B6B3B2 /* Main.storyboard */; };
 		87AE2BF92988AC9600B6B3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87AE2BF82988AC9600B6B3B2 /* Assets.xcassets */; };
 		87AE2BFC2988AC9600B6B3B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AE2BFA2988AC9600B6B3B2 /* LaunchScreen.storyboard */; };
+		87AE2C252988B7C500B6B3B2 /* VoipService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C242988B7C500B6B3B2 /* VoipService.swift */; };
+		87AE2C272988B80700B6B3B2 /* CallInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C262988B80700B6B3B2 /* CallInfo.swift */; };
+		87AE2C2A2988B83A00B6B3B2 /* DataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C292988B83A00B6B3B2 /* DataExtensions.swift */; };
+		87AE2C2C2988B84F00B6B3B2 /* CXProviderConfigurationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C2B2988B84F00B6B3B2 /* CXProviderConfigurationExtensions.swift */; };
+		87AE2C2E2988B86E00B6B3B2 /* CXProviderExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C2D2988B86E00B6B3B2 /* CXProviderExtensions.swift */; };
+		87AE2C302988B88B00B6B3B2 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C2F2988B88B00B6B3B2 /* UIApplicationExtensions.swift */; };
+		87AE2C322988B8A300B6B3B2 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C312988B8A300B6B3B2 /* CallViewController.swift */; };
+		87AE2C342988B8CC00B6B3B2 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C332988B8CC00B6B3B2 /* UIViewControllerExtensions.swift */; };
+		87AE2C362988B90F00B6B3B2 /* VoipService+PKPushRegistryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C352988B90F00B6B3B2 /* VoipService+PKPushRegistryDelegate.swift */; };
+		87AE2C3A2988B96400B6B3B2 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C392988B96400B6B3B2 /* AppInfo.swift */; };
+		87AE2C3C2988B99200B6B3B2 /* VoipService+CXProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C3B2988B99200B6B3B2 /* VoipService+CXProviderDelegate.swift */; };
+		87AE2C422988D1F800B6B3B2 /* AVFAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87AE2C402988BA6A00B6B3B2 /* AVFAudio.framework */; };
+		87AE2C442988D3EE00B6B3B2 /* NSUserActivityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C432988D3EE00B6B3B2 /* NSUserActivityExtension.swift */; };
+		87AE2C4B2988D43D00B6B3B2 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87AE2C4A2988D43D00B6B3B2 /* Intents.framework */; };
+		87AE2C4E2988D43D00B6B3B2 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AE2C4D2988D43D00B6B3B2 /* IntentHandler.swift */; };
+		87AE2C522988D43D00B6B3B2 /* CallIntent.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 87AE2C492988D43D00B6B3B2 /* CallIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87AE2C502988D43D00B6B3B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87AE2BE42988AC9600B6B3B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87AE2C482988D43D00B6B3B2;
+			remoteInfo = CallIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		87AE2C562988D43D00B6B3B2 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				87AE2C522988D43D00B6B3B2 /* CallIntent.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		87AE2BEC2988AC9600B6B3B2 /* voipSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voipSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +64,24 @@
 		87AE2BF82988AC9600B6B3B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87AE2BFB2988AC9600B6B3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87AE2BFD2988AC9600B6B3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87AE2C242988B7C500B6B3B2 /* VoipService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoipService.swift; sourceTree = "<group>"; };
+		87AE2C262988B80700B6B3B2 /* CallInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallInfo.swift; sourceTree = "<group>"; };
+		87AE2C292988B83A00B6B3B2 /* DataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtensions.swift; sourceTree = "<group>"; };
+		87AE2C2B2988B84F00B6B3B2 /* CXProviderConfigurationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXProviderConfigurationExtensions.swift; sourceTree = "<group>"; };
+		87AE2C2D2988B86E00B6B3B2 /* CXProviderExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXProviderExtensions.swift; sourceTree = "<group>"; };
+		87AE2C2F2988B88B00B6B3B2 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
+		87AE2C312988B8A300B6B3B2 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		87AE2C332988B8CC00B6B3B2 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		87AE2C352988B90F00B6B3B2 /* VoipService+PKPushRegistryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VoipService+PKPushRegistryDelegate.swift"; sourceTree = "<group>"; };
+		87AE2C392988B96400B6B3B2 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		87AE2C3B2988B99200B6B3B2 /* VoipService+CXProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VoipService+CXProviderDelegate.swift"; sourceTree = "<group>"; };
+		87AE2C3E2988BA6000B6B3B2 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		87AE2C402988BA6A00B6B3B2 /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
+		87AE2C432988D3EE00B6B3B2 /* NSUserActivityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSUserActivityExtension.swift; sourceTree = "<group>"; };
+		87AE2C492988D43D00B6B3B2 /* CallIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		87AE2C4A2988D43D00B6B3B2 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		87AE2C4D2988D43D00B6B3B2 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		87AE2C4F2988D43D00B6B3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +89,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87AE2C422988D1F800B6B3B2 /* AVFAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87AE2C462988D43D00B6B3B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AE2C4B2988D43D00B6B3B2 /* Intents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				87AE2BEE2988AC9600B6B3B2 /* voipSample */,
+				87AE2C4C2988D43D00B6B3B2 /* CallIntent */,
 				87AE2BED2988AC9600B6B3B2 /* Products */,
+				87AE2C3D2988BA5F00B6B3B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				87AE2BEC2988AC9600B6B3B2 /* voipSample.app */,
+				87AE2C492988D43D00B6B3B2 /* CallIntent.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +126,8 @@
 		87AE2BEE2988AC9600B6B3B2 /* voipSample */ = {
 			isa = PBXGroup;
 			children = (
+				87AE2C382988B95B00B6B3B2 /* AppInfo */,
+				87AE2C202988B7A400B6B3B2 /* Voip */,
 				87AE2BEF2988AC9600B6B3B2 /* AppDelegate.swift */,
 				87AE2BF12988AC9600B6B3B2 /* SceneDelegate.swift */,
 				87AE2BF32988AC9600B6B3B2 /* ViewController.swift */,
@@ -65,6 +137,83 @@
 				87AE2BFD2988AC9600B6B3B2 /* Info.plist */,
 			);
 			path = voipSample;
+			sourceTree = "<group>";
+		};
+		87AE2C202988B7A400B6B3B2 /* Voip */ = {
+			isa = PBXGroup;
+			children = (
+				87AE2C282988B82A00B6B3B2 /* Extensions */,
+				87AE2C232988B7B800B6B3B2 /* Utilities */,
+				87AE2C222988B7B200B6B3B2 /* Controller */,
+				87AE2C212988B7AE00B6B3B2 /* Model */,
+			);
+			path = Voip;
+			sourceTree = "<group>";
+		};
+		87AE2C212988B7AE00B6B3B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				87AE2C262988B80700B6B3B2 /* CallInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		87AE2C222988B7B200B6B3B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				87AE2C312988B8A300B6B3B2 /* CallViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		87AE2C232988B7B800B6B3B2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				87AE2C242988B7C500B6B3B2 /* VoipService.swift */,
+				87AE2C352988B90F00B6B3B2 /* VoipService+PKPushRegistryDelegate.swift */,
+				87AE2C3B2988B99200B6B3B2 /* VoipService+CXProviderDelegate.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		87AE2C282988B82A00B6B3B2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				87AE2C292988B83A00B6B3B2 /* DataExtensions.swift */,
+				87AE2C2B2988B84F00B6B3B2 /* CXProviderConfigurationExtensions.swift */,
+				87AE2C2D2988B86E00B6B3B2 /* CXProviderExtensions.swift */,
+				87AE2C2F2988B88B00B6B3B2 /* UIApplicationExtensions.swift */,
+				87AE2C332988B8CC00B6B3B2 /* UIViewControllerExtensions.swift */,
+				87AE2C432988D3EE00B6B3B2 /* NSUserActivityExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87AE2C382988B95B00B6B3B2 /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				87AE2C392988B96400B6B3B2 /* AppInfo.swift */,
+			);
+			path = AppInfo;
+			sourceTree = "<group>";
+		};
+		87AE2C3D2988BA5F00B6B3B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87AE2C402988BA6A00B6B3B2 /* AVFAudio.framework */,
+				87AE2C3E2988BA6000B6B3B2 /* AVKit.framework */,
+				87AE2C4A2988D43D00B6B3B2 /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87AE2C4C2988D43D00B6B3B2 /* CallIntent */ = {
+			isa = PBXGroup;
+			children = (
+				87AE2C4D2988D43D00B6B3B2 /* IntentHandler.swift */,
+				87AE2C4F2988D43D00B6B3B2 /* Info.plist */,
+			);
+			path = CallIntent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,15 +226,34 @@
 				87AE2BE82988AC9600B6B3B2 /* Sources */,
 				87AE2BE92988AC9600B6B3B2 /* Frameworks */,
 				87AE2BEA2988AC9600B6B3B2 /* Resources */,
+				87AE2C562988D43D00B6B3B2 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				87AE2C512988D43D00B6B3B2 /* PBXTargetDependency */,
 			);
 			name = voipSample;
 			productName = voipSample;
 			productReference = 87AE2BEC2988AC9600B6B3B2 /* voipSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		87AE2C482988D43D00B6B3B2 /* CallIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87AE2C532988D43D00B6B3B2 /* Build configuration list for PBXNativeTarget "CallIntent" */;
+			buildPhases = (
+				87AE2C452988D43D00B6B3B2 /* Sources */,
+				87AE2C462988D43D00B6B3B2 /* Frameworks */,
+				87AE2C472988D43D00B6B3B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallIntent;
+			productName = CallIntent;
+			productReference = 87AE2C492988D43D00B6B3B2 /* CallIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +266,9 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					87AE2BEB2988AC9600B6B3B2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					87AE2C482988D43D00B6B3B2 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -116,6 +287,7 @@
 			projectRoot = "";
 			targets = (
 				87AE2BEB2988AC9600B6B3B2 /* voipSample */,
+				87AE2C482988D43D00B6B3B2 /* CallIntent */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +303,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		87AE2C472988D43D00B6B3B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +317,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87AE2C302988B88B00B6B3B2 /* UIApplicationExtensions.swift in Sources */,
+				87AE2C442988D3EE00B6B3B2 /* NSUserActivityExtension.swift in Sources */,
+				87AE2C342988B8CC00B6B3B2 /* UIViewControllerExtensions.swift in Sources */,
+				87AE2C272988B80700B6B3B2 /* CallInfo.swift in Sources */,
 				87AE2BF42988AC9600B6B3B2 /* ViewController.swift in Sources */,
 				87AE2BF02988AC9600B6B3B2 /* AppDelegate.swift in Sources */,
+				87AE2C2E2988B86E00B6B3B2 /* CXProviderExtensions.swift in Sources */,
 				87AE2BF22988AC9600B6B3B2 /* SceneDelegate.swift in Sources */,
+				87AE2C2C2988B84F00B6B3B2 /* CXProviderConfigurationExtensions.swift in Sources */,
+				87AE2C362988B90F00B6B3B2 /* VoipService+PKPushRegistryDelegate.swift in Sources */,
+				87AE2C252988B7C500B6B3B2 /* VoipService.swift in Sources */,
+				87AE2C322988B8A300B6B3B2 /* CallViewController.swift in Sources */,
+				87AE2C3A2988B96400B6B3B2 /* AppInfo.swift in Sources */,
+				87AE2C3C2988B99200B6B3B2 /* VoipService+CXProviderDelegate.swift in Sources */,
+				87AE2C2A2988B83A00B6B3B2 /* DataExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87AE2C452988D43D00B6B3B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AE2C4E2988D43D00B6B3B2 /* IntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87AE2C512988D43D00B6B3B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87AE2C482988D43D00B6B3B2 /* CallIntent */;
+			targetProxy = 87AE2C502988D43D00B6B3B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		87AE2BF52988AC9600B6B3B2 /* Main.storyboard */ = {
@@ -216,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,6 +490,8 @@
 		87AE2C012988AC9600B6B3B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,11 +499,13 @@
 				DEVELOPMENT_TEAM = 9BCFJ2MUMK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = voipSample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "VOIP테스트";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +522,8 @@
 		87AE2C022988AC9600B6B3B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,11 +531,13 @@
 				DEVELOPMENT_TEAM = 9BCFJ2MUMK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = voipSample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "VOIP테스트";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +545,58 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jw.nam.voipSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		87AE2C542988D43D00B6B3B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BCFJ2MUMK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CallIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CallIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jw.nam.voipSample.CallIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87AE2C552988D43D00B6B3B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9BCFJ2MUMK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CallIntent/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CallIntent;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jw.nam.voipSample.CallIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -353,6 +620,15 @@
 			buildConfigurations = (
 				87AE2C012988AC9600B6B3B2 /* Debug */,
 				87AE2C022988AC9600B6B3B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87AE2C532988D43D00B6B3B2 /* Build configuration list for PBXNativeTarget "CallIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87AE2C542988D43D00B6B3B2 /* Debug */,
+				87AE2C552988D43D00B6B3B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
