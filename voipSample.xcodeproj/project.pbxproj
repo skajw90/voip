@@ -82,6 +82,7 @@
 		87AE2C4A2988D43D00B6B3B2 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		87AE2C4D2988D43D00B6B3B2 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		87AE2C4F2988D43D00B6B3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87AE2C572988D5F900B6B3B2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +147,7 @@
 				87AE2C232988B7B800B6B3B2 /* Utilities */,
 				87AE2C222988B7B200B6B3B2 /* Controller */,
 				87AE2C212988B7AE00B6B3B2 /* Model */,
+				87AE2C572988D5F900B6B3B2 /* README.md */,
 			);
 			path = Voip;
 			sourceTree = "<group>";
