@@ -31,11 +31,11 @@ extension VoipService: PKPushRegistryDelegate {
             let name = call["name"]
             let description = call["description"]
             let url = call["url"]
-            currentCall = CallInfo(uuid: uuid, name: name ?? "핏타민", description: description, url: url)
+            // create current call
         }
         
         if currentCall == nil {
-            currentCall = CallInfo(uuid: uuid, name: "핏타민")
+            // if can't create current call
         }
         
         do {
